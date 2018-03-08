@@ -68,7 +68,7 @@ if __name__ == '__main__':
     S = socket.socket()
     UDP_HOST_NAME =socket.gethostname()
     SERVER_IP_ADDRESS=socket.gethostbyname(UDP_HOST_NAME)
-    SERVER_IP_ADDRESS = "127.0.0.1"
+    #SERVER_IP_ADDRESS = "127.0.0.1"
     
     
     #Receiving data from Client and decrypting message_________________________________________________________________________________________
