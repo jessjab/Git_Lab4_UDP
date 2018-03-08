@@ -83,7 +83,7 @@ if __name__ == '__main__':
     #print TIMESTAMP
     
     #Sending data to Server__________________________________________________________________________________________
-    MESSAGE_TO_SEND = "Client:# " + CLIENT_NUMBER + " " +TIMESTAMP + " Client_IP_Address:" + CLIENT_IP_ADDRESS + " Encrypted_Message: " +ENCRYPTED_MESSAGE
+    MESSAGE_TO_SEND = "Client:# " + CLIENT_NUMBER + " " +TIMESTAMP + " Client_IP_Address:" + CLIENT_IP_ADDRESS + " Message: " +ENCRYPTED_MESSAGE
     clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sent = clientSock.sendto(MESSAGE_TO_SEND, (SERVER_IP_ADDRESS, UDP_PORT_NO_int))
     print >>sys.stderr, 'sent %s bytes to %s' % (sent, SERVER_IP_ADDRESS)
