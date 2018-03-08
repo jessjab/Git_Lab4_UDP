@@ -86,6 +86,8 @@ if __name__ == '__main__':
         print "Length of encrypted keys", len(ENCRYPT_KEYS)
         if CLIENT_NUMBER >= len(ENCRYPT_KEYS):
             print "The Key for this client is not available."
+            sent = serverSock.sendto(str("The Key for this client is not available."),ADDR)
+            print >>sys.stderr, 'sent %s bytes back to %s' % (sent, ADDR)
             sys.exit()
             
         DECODED_MESSAGE = FlipandXOR_decode(ENCRYPT_KEYS[int(CLIENT_NUMBER)], ENCODED_MESSAGE)
