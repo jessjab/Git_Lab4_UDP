@@ -57,7 +57,7 @@ if __name__ == '__main__':
     UDP_PORT_NO = sys.argv[1]
     UDP_PORT_NO_int = int(UDP_PORT_NO)
 #     ENCRYPT_KEY= sys.argv[2]
-    ENCRYPT_KEYS= [0,1,2,3,4]
+    ENCRYPT_KEYS= [3,6,9,12,15]
     #ENCRYPT_KEY= 5
     
     print "You entered: ",UDP_PORT_NO_int
