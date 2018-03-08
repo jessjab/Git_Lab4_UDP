@@ -3,7 +3,7 @@ Program Title: UDP SOCKET Program
 Modules and their IOs for this program:
 
 		UDP_client: keyboard input = Server IP Adress, UDP Port Number, Client Number, Encrypt Key- ---------->Press enter and "Input" wil then appear,so type your message.
-				   example = "127.0.0.1 6789 0 k"----------------------------------------------------->Press enter 
+				   example = "127.0.0.1 6789 0 3"----------------------------------------------------->Press enter 
 					     Input: "This is the message I am typing." -------------------------------> Press enter
 
 		UDP_server: keyboard input= UDP Port Number
