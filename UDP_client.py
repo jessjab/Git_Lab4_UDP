@@ -94,3 +94,4 @@ if __name__ == '__main__':
         DATA_BACK, ADDR = clientSock.recvfrom(1024)
         print >>sys.stderr, 'received %s bytes back from %s' % (len(DATA_BACK), ADDR)
         print "Client received message from server: ", DATA_BACK
+        break
